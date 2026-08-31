@@ -13,13 +13,14 @@ pipeline {
                 bat 'chcp 65001\n vrunner init-dev' 
             }
         }
-    }
 
-    stage('Syntax check') {
-        steps {
-            bat 'chcp 65001\n vrunner syntax-check'                
-        }       
+        stage('Syntax check') {
+            steps {
+                bat 'chcp 65001\n vrunner syntax-check'                
+             }       
+        }
     }
+    
 
     post {
         success {
