@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Synchronize') {
             steps {
-                bat 'chcp 65001\n gitsunc sync' 
+                bat 'chcp 65001\n gitsync sync --storage-user admin C:/Gitstorage/Storage C:/Gitstorage/Gitst' 
             }
         }
         stage('Build test base') {
