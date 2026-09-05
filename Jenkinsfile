@@ -5,8 +5,8 @@ pipeline {
 
     environment {
         envString = 'true'
-        STORAGE_PATH = 'C:/Gitstorage/Storage'
-        GIT_REPO_PATH = 'C:/Gitstorage/Gitst'
+        STORAGE_PATH = 'C:\\Gitstorage\\Storage'
+        GIT_REPO_PATH = 'C:\\Gitstorage\\Gitst'
         USER_1C = 'admin'
     }
 
