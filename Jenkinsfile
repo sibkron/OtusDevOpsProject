@@ -33,4 +33,8 @@ pipeline {
             bat 'echo failure'
         }
     }
+
+    options {
+        skipDefaultCheckout(true)
+        }
 }
