@@ -8,6 +8,11 @@ pipeline {
     }
 
     stages {
+        stage('Synchronize') {
+            steps {
+                bat 'chcp 65001\n gitsunc sync' 
+            }
+        }
         stage('Build test base') {
             steps {
                 bat 'chcp 65001\n vrunner init-dev' 
