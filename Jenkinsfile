@@ -5,12 +5,15 @@ pipeline {
 
     environment {
         envString = 'true'
+        STORAGE_PATH = 'C:/Gitstorage/Storage'
+        GIT_REPO_PATH = 'C:/Gitstorage/Gitst'
+        USER_1C = 'admin'
     }
 
     stages {
         stage('Synchronize') {
             steps {
-                bat 'chcp 65001\n gitsync sync --storage-user admin C:/Gitstorage/Storage C:/Gitstorage/Gitst' 
+                bat 'chcp 65001\n gitsync sync --storage-user "%USER_1C%" "%STORAGE_PATH%" "%GIT_REPO_PATH%"' 
             }
         }
         stage('Build test base') {
