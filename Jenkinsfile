@@ -5,9 +5,17 @@ pipeline {
 
     environment {
         envString = 'true'
+        STORAGE_PATH = 'C:\\Gitstorage\\Storage'
+        GIT_REPO_PATH = 'C:\\Gitstorage\\Gitst'
+        USER_1C = 'admin'
     }
 
     stages {
+        stage('Gitsync') {
+            steps {
+                bat 'chcp 65001\n gitsync sync --storage-user "%USER_1C%" "%STORAGE_PATH%" "%GIT_REPO_PATH%"' 
+            }
+        }
         stage('Build test base') {
             steps {
                 bat 'chcp 65001\n vrunner init-dev' 
@@ -33,8 +41,4 @@ pipeline {
             bat 'echo failure'
         }
     }
-
-    options {
-        skipDefaultCheckout(true)
-        }
 }
