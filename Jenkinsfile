@@ -28,15 +28,16 @@ pipeline {
             }
         }
 
-        stage('Сборка расширения') {
-            steps {
-                bat 'chcp 65001\n vrunner cfe load' 
-            }
-        }
 
         stage('Синтаксический контроль') {
             steps {
                 bat 'chcp 65001\n vrunner syntax-check'                
+             }       
+        }
+
+        stage('Yaxunit тесты') {
+            steps {
+                bat 'chcp 65001\n "C:\\Program Files\\1cv8\\8.3.27.1508\\bin\\1cv8c.exe" /IBConnectionString "File=""C:\\Base1c\\DemoUnitTest"";" /C "RunUnitTests=" /N"Администратор"'                
              }       
         }
     }
