@@ -59,7 +59,7 @@
 		"КаталогОтносительноКоторогоНадоСтроитьИерархию": "$workspaceRoot/features",
 		"ДанныеАллюрМеток": []
 	},
-	"ДелатьОтчетВФорматеjUnit": false,
+	"ДелатьОтчетВФорматеjUnit": true,
 	"ДелатьОтчетВФорматеCucumberJson": true,
 	"ОтчетCucumber": {
 		"КаталогВыгрузкиCucumberJson": "$workspaceRoot/build/out/cucumber"
