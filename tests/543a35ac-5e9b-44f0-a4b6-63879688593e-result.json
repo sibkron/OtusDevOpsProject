@@ -1,0 +1,55 @@
+{
+"uuid": "543a35ac-5e9b-44f0-a4b6-63879688593e",
+"historyId": "f07ff979ea70c7734636d419e27a1138",
+"testCaseId": "f07ff979ea70c7734636d419e27a1138",
+"fullName": "Док_РасходТовара.ПроверкаДвиженийРасходаПоТоварнымЗапасам [Сервер]",
+"name": "ПроверкаДвиженийРасходаПоТоварнымЗапасам",
+"parameters": [],
+"links": [],
+"labels": [
+{
+"name": "language",
+"value": "bsl"
+},
+{
+"name": "framework",
+"value": "YAxUnit"
+},
+{
+"name": "epic",
+"value": "Документ"
+},
+{
+"name": "feature",
+"value": "РасходТовара"
+},
+{
+"name": "parentSuite",
+"value": "Unit tests"
+},
+{
+"name": "suite",
+"value": "Док_РасходТовара"
+},
+{
+"name": "subSuite",
+"value": "Тесты документа Расход товара [Сервер]"
+},
+{
+"name": "tag",
+"value": "Сервер"
+},
+{
+"name": "tag",
+"value": "Позитив"
+}
+],
+"status": "passed",
+"statusDetails": {
+"message": null,
+"trace": null
+},
+"start": 1788774029791,
+"stop": 1788774029897,
+"steps": []
+}
