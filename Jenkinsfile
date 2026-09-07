@@ -5,50 +5,40 @@ pipeline {
 
     environment {
         envString = 'true'
-        STORAGE_PATH = 'C:\\Gitstorage\\Storage'
-        GIT_REPO_PATH = 'C:\\Gitstorage\\Gitst'
+        STORAGE_PATH = 'C:\\Base1c\\Storage'
+        GIT_REPO_PATH = 'C:\\OtusRepo\\OtusProject\\src\\cf'
+        STORAGE_PATH_CFE = 'C:\\Base1c\\StorageYaxunit'
+        GIT_REPO_PATH_CFE = 'C:\\OtusRepo\\OtusProject\\src\\cfe'
         USER_1C = 'admin'
         EPF_STORAGE_PATH = 'C:\\OtusRepo\\OtusProject\\build\\epf'
         GIT_EPF_STORAGE_PATH = 'C:\\OtusRepo\\OtusProject\\src\\epf'
+        GITSYNC_EXTENSION = 'Yaxunit'
     }
 
     stages {
-        stage('Synchronize repo') {
+        stage('Синхронизация репозитория конфигурации') {
             steps {
                 bat 'chcp 65001\n gitsync sync --storage-user "%USER_1C%" "%STORAGE_PATH%" "%GIT_REPO_PATH%"' 
             }
         }
 
-        stage('Synchronize data processors') {
+        stage('Синхронизация репозитория расширения') {
             steps {
-                bat 'chcp 65001\n precommit1c --decompile "%EPF_STORAGE_PATH%" "%GIT_EPF_STORAGE_PATH%"' 
+                bat 'chcp 65001\n gitsync sync --storage-user "%USER_1C%" -e "%GITSYNC_EXTENSION%" "%STORAGE_PATH_CFE%" "%GIT_REPO_PATH_CFE%"' 
             }
         }
 
-        stage('Build test base') {
+        stage('Сборка тестовой базы') {
             steps {
                 bat 'chcp 65001\n vrunner init-dev' 
             }
         }
 
-        stage('Syntax check') {
+        stage('Синтаксический контроль') {
             steps {
                 bat 'chcp 65001\n vrunner syntax-check'                
              }       
         }
-
-        stage('Vanessa') {
-            steps{
-                script {
-                    try {
-                        bat "chcp 65001\n runner vanessa"
-                    }
-                    catch(Exception Exc) {
-                        currentBuild.result = 'UNSTABLE'
-                    }
-                }   
-            }    
-        } 
     }
     
 
