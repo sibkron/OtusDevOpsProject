@@ -1,0 +1,55 @@
+{
+"uuid": "5de1b394-299d-4192-8170-0ecbfb6ada45",
+"historyId": "b31474c9a7043590a6a3dc42229c2436",
+"testCaseId": "b31474c9a7043590a6a3dc42229c2436",
+"fullName": "Док_ПриходТовара.ПроверкаДвиженийПриходаПоВзаиморасчетам [Сервер]",
+"name": "ПроверкаДвиженийПриходаПоВзаиморасчетам",
+"parameters": [],
+"links": [],
+"labels": [
+{
+"name": "language",
+"value": "bsl"
+},
+{
+"name": "framework",
+"value": "YAxUnit"
+},
+{
+"name": "epic",
+"value": "Документ"
+},
+{
+"name": "feature",
+"value": "ПриходТовара"
+},
+{
+"name": "parentSuite",
+"value": "Unit tests"
+},
+{
+"name": "suite",
+"value": "Док_ПриходТовара"
+},
+{
+"name": "subSuite",
+"value": "Тесты документа Приход товара [Сервер]"
+},
+{
+"name": "tag",
+"value": "Сервер"
+},
+{
+"name": "tag",
+"value": "Позитив"
+}
+],
+"status": "passed",
+"statusDetails": {
+"message": null,
+"trace": null
+},
+"start": 1788776034586,
+"stop": 1788776034695,
+"steps": []
+}
