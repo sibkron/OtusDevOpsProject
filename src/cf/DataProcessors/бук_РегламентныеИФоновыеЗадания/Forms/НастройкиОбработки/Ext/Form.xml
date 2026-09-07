@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСохранитьИзменения" id="7">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СохранитьИзменения</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьИзмененияРасширеннаяПодсказка" id="9"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="8">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отмена</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="10"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ЗадержкаПриОбновленииСпискаРегламентныхЗаданий" id="3">
+			<DataPath>ЗадержкаПриОбновленииСпискаРегламентныхЗаданий</DataPath>
+			<ChoiceButton>false</ChoiceButton>
+			<SpinButton>true</SpinButton>
+			<ContextMenu name="ЗадержкаПриОбновленииСпискаРегламентныхЗаданийКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ЗадержкаПриОбновленииСпискаРегламентныхЗаданийРасширеннаяПодсказка" id="11"/>
+			<Events>
+				<Event name="Tuning">ЗадержкаПриОбновленииСпискаРегламентныхЗаданийРегулирование</Event>
+			</Events>
+		</InputField>
+		<LabelDecoration name="ПояснениеЗадержкаПриОбновленииСпискаРегламентныхЗаданий" id="5">
+			<Width>55</Width>
+			<TextColor>web:SteelBlue</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запуск регламентного задания (кнопка 'Запустить') выполняется при помощи перезаписи задания. Чтобы изменения вступили в силу, требуется некоторое время (обычно хватает 0.5 сек.), поэтому список регламентных заданий обновляется не сразу. Если указанного времени не хватает, то интервал можно увеличить.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПояснениеЗадержкаПриОбновленииСпискаРегламентныхЗаданийКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ПояснениеЗадержкаПриОбновленииСпискаРегламентныхЗаданийРасширеннаяПодсказка" id="12"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗадержкаПриОбновленииСпискаРегламентныхЗаданий" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задержка при обновлении списка регламентных заданий (сек.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ЗадержкаПриОбновленииСпискаРегламентныхЗаданий</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьИзменения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить изменения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьИзменения</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ТекущиеЗначения">
+			<Type/>
+		</Parameter>
+	</Parameters>
+</Form>

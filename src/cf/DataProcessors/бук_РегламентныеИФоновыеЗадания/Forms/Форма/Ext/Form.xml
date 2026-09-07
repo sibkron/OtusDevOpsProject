@@ -1,0 +1,3099 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаНастройкиОбработки" id="186">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.НастройкиОбработки</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаНастройкиОбработкиРасширеннаяПодсказка" id="197"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="198"/>
+			<ChildItems>
+				<Page name="СтраницаРегламентныеЗадания" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламентные задания</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница регламентные задания</v8:content>
+						</v8:item>
+					</ToolTip>
+					<TitleDataPath>КоличествоРегламентныхЗаданий</TitleDataPath>
+					<ExtendedTooltip name="СтраницаРегламентныеЗаданияРасширеннаяПодсказка" id="199"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСостояниеИспользованияРегламентныхЗаданий" id="179">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа состояние использования регламентных заданий</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа состояние использования регламентных заданий</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСостояниеИспользованияРегламентныхЗаданийРасширеннаяПодсказка" id="200"/>
+							<ChildItems>
+								<InputField name="СостояниеИспользованияРегламентныхЗаданийТекст" id="191">
+									<DataPath>СостояниеИспользованияРегламентныхЗаданийТекст</DataPath>
+									<SkipOnInput>true</SkipOnInput>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Текущее состояние использования регламентных заданий</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>18</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="СостояниеИспользованияРегламентныхЗаданийТекстКонтекстноеМеню" id="192"/>
+									<ExtendedTooltip name="СостояниеИспользованияРегламентныхЗаданийТекстРасширеннаяПодсказка" id="201"/>
+									<Events>
+										<Event name="Clearing">СостояниеИспользованияРегламентныхЗаданийТекстОчистка</Event>
+									</Events>
+								</InputField>
+								<Button name="ОбновитьСостояниеИспользованияРегламентныхЗаданий" id="184">
+									<Type>UsualButton</Type>
+									<Width>3</Width>
+									<CommandName>Form.Command.ОбновитьСостояниеИспользованияРегламентныхЗаданий</CommandName>
+									<ExtendedTooltip name="ОбновитьСостояниеИспользованияРегламентныхЗаданийРасширеннаяПодсказка" id="202"/>
+								</Button>
+								<Button name="ВключитьВыключитьИспользованиеРегламентныхЗаданий" id="182">
+									<Type>UsualButton</Type>
+									<Width>10</Width>
+									<CommandName>Form.Command.ВключитьВыключитьИспользованиеРегламентныхЗаданий</CommandName>
+									<ExtendedTooltip name="ВключитьВыключитьИспользованиеРегламентныхЗаданийРасширеннаяПодсказка" id="203"/>
+								</Button>
+								<Button name="НастроитьПараметрыАдминистрирования" id="185">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.НастроитьПараметрыАдминистрирования</CommandName>
+									<ExtendedTooltip name="НастроитьПараметрыАдминистрированияРасширеннаяПодсказка" id="204"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНастройки" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="205"/>
+							<ChildItems>
+								<InputField name="ОтборПоСостояниюРегламентногоЗадания" id="49">
+									<DataPath>ОтборПоСостояниюРегламентногоЗадания</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отбор по текущему состоянию задания</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>18</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Существующие</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Избранные</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Активные</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">2</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Выполнявшиеся</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">3</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>С ошибками</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">4</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Включенные</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">5</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Выключенные</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">6</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Предопределенные</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">6</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Непредопределенные</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">8</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>С параметрами</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">9</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Все</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">10</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ChoiceListHeight>11</ChoiceListHeight>
+									<ContextMenu name="ОтборПоСостояниюРегламентногоЗаданияКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ОтборПоСостояниюРегламентногоЗаданияРасширеннаяПодсказка" id="206"/>
+									<Events>
+										<Event name="OnChange">ОтборПоСостояниюРегламентногоЗаданияПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ОтборПоНаименованиюРегламентногоЗадания" id="189">
+									<DataPath>ОтборПоНаименованиюРегламентногоЗадания</DataPath>
+									<SkipOnInput>true</SkipOnInput>
+									<Width>20</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="ОтборПоНаименованиюРегламентногоЗаданияКонтекстноеМеню" id="190"/>
+									<ExtendedTooltip name="ОтборПоНаименованиюРегламентногоЗаданияРасширеннаяПодсказка" id="207"/>
+									<Events>
+										<Event name="OnChange">ОтборПоНаименованиюРегламентногоЗаданияПриИзменении</Event>
+										<Event name="TextEditEnd">ОтборПоНаименованиюРегламентногоЗаданияОкончаниеВводаТекста</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="ГруппироватьПоВидуЗадания" id="51">
+									<DataPath>ГруппироватьПоВидуЗадания</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ГруппироватьПоВидуЗаданияКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ГруппироватьПоВидуЗаданияРасширеннаяПодсказка" id="208"/>
+									<Events>
+										<Event name="OnChange">ГруппироватьПоВидуЗаданияПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ДеревоРегламентныхЗаданий" id="1">
+							<Representation>Tree</Representation>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ДеревоРегламентныхЗаданий</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="ДеревоРегламентныхЗаданийКонтекстноеМеню" id="2">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ДеревоРегламентныхЗаданийКонтекстноеМенюВыполнитьРегламентноеЗаданиеНепосредственно" id="59">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВыполнитьРегламентноеЗаданиеНепосредственно</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выполнить непосредственно</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийКонтекстноеМенюВыполнитьРегламентноеЗаданиеНепосредственноРасширеннаяПодсказка" id="209"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийКонтекстноеМенюВыполнитьРегламентноеЗаданиеВФоне" id="60">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВыполнитьРегламентноеЗаданиеВФоне</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийКонтекстноеМенюВыполнитьРегламентноеЗаданиеВФонеРасширеннаяПодсказка" id="210"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийКонтекстноеМенюЗапуститьРегламентноеЗадание" id="62">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗапуститьРегламентноеЗадание</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийКонтекстноеМенюЗапуститьРегламентноеЗаданиеРасширеннаяПодсказка" id="211"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийКонтекстноеМенюОтменитьРегламентноеЗадание" id="63">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОтменитьРегламентноеЗадание</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийКонтекстноеМенюОтменитьРегламентноеЗаданиеРасширеннаяПодсказка" id="212"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийКонтекстноеМенюДобавитьУдалитьРегламентноеЗаданиеИзИзбранного" id="195">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьУдалитьРегламентноеЗаданиеИзИзбранного</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийКонтекстноеМенюДобавитьУдалитьРегламентноеЗаданиеИзИзбранногоРасширеннаяПодсказка" id="213"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийКонтекстноеМенюВключитьВыключитьРегламентноеЗадание" id="54">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВключитьВыключитьРегламентноеЗадание</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийКонтекстноеМенюВключитьВыключитьРегламентноеЗаданиеРасширеннаяПодсказка" id="214"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийКонтекстноеМенюНайтиФоновыеЗадания" id="144">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.НайтиФоновыеЗадания</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийКонтекстноеМенюНайтиФоновыеЗаданияРасширеннаяПодсказка" id="215"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийКонтекстноеМенюОткрытьПоследнееЗадание" id="161">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОткрытьПоследнееЗадание</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийКонтекстноеМенюОткрытьПоследнееЗаданиеРасширеннаяПодсказка" id="216"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ДеревоРегламентныхЗаданийКоманднаяПанель" id="3">
+								<ChildItems>
+									<Button name="ДеревоРегламентныхЗаданийОбновитьРегламентныеЗадания" id="68">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьРегламентныеЗадания</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийОбновитьРегламентныеЗаданияРасширеннаяПодсказка" id="217"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийВыполнитьРегламентноеЗаданиеНепосредственно" id="74">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВыполнитьРегламентноеЗаданиеНепосредственно</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийВыполнитьРегламентноеЗаданиеНепосредственноРасширеннаяПодсказка" id="218"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийЗапуститьРегламентноеЗадание" id="70">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗапуститьРегламентноеЗадание</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийЗапуститьРегламентноеЗаданиеРасширеннаяПодсказка" id="219"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийОтменитьРегламентноеЗадание" id="71">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОтменитьРегламентноеЗадание</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийОтменитьРегламентноеЗаданиеРасширеннаяПодсказка" id="220"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийНастроитьРасписание" id="67">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.НастроитьРасписание</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийНастроитьРасписаниеРасширеннаяПодсказка" id="221"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийДобавитьУдалитьРегламентноеЗаданиеИзИзбранного" id="196">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьУдалитьРегламентноеЗаданиеИзИзбранного</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийДобавитьУдалитьРегламентноеЗаданиеИзИзбранногоРасширеннаяПодсказка" id="222"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийИзменить" id="65">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.ДеревоРегламентныхЗаданий.StandardCommand.Change</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийИзменитьРасширеннаяПодсказка" id="223"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийДобавить" id="64">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.ДеревоРегламентныхЗаданий.StandardCommand.Add</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийДобавитьРасширеннаяПодсказка" id="224"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийУдалить" id="66">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.ДеревоРегламентныхЗаданий.StandardCommand.Delete</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийУдалитьРасширеннаяПодсказка" id="225"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийРазвернутьДеревоРегламентныхЗаданий" id="69">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.РазвернутьДеревоРегламентныхЗаданий</CommandName>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийРазвернутьДеревоРегламентныхЗаданийРасширеннаяПодсказка" id="226"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийВключитьВыключитьРегламентноеЗадание" id="72">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВключитьВыключитьРегламентноеЗадание</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийВключитьВыключитьРегламентноеЗаданиеРасширеннаяПодсказка" id="227"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийВыполнитьРегламентноеЗаданиеВФоне" id="73">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВыполнитьРегламентноеЗаданиеВФоне</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийВыполнитьРегламентноеЗаданиеВФонеРасширеннаяПодсказка" id="228"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийНайтиФоновыеЗадания" id="143">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.НайтиФоновыеЗадания</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийНайтиФоновыеЗаданияРасширеннаяПодсказка" id="229"/>
+									</Button>
+									<Button name="ДеревоРегламентныхЗаданийОткрытьПоследнееЗадание" id="162">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОткрытьПоследнееЗадание</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ДеревоРегламентныхЗаданийОткрытьПоследнееЗаданиеРасширеннаяПодсказка" id="230"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоРегламентныхЗаданийРасширеннаяПодсказка" id="231"/>
+							<SearchStringAddition name="ДеревоРегламентныхЗаданийСтрокаПоиска" id="232">
+								<AdditionSource>
+									<Item>ДеревоРегламентныхЗаданий</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРегламентныхЗаданийСтрокаПоискаКонтекстноеМеню" id="233"/>
+								<ExtendedTooltip name="ДеревоРегламентныхЗаданийСтрокаПоискаРасширеннаяПодсказка" id="234"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоРегламентныхЗаданийСостояниеПросмотра" id="235">
+								<AdditionSource>
+									<Item>ДеревоРегламентныхЗаданий</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРегламентныхЗаданийСостояниеПросмотраКонтекстноеМеню" id="236"/>
+								<ExtendedTooltip name="ДеревоРегламентныхЗаданийСостояниеПросмотраРасширеннаяПодсказка" id="237"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоРегламентныхЗаданийУправлениеПоиском" id="238">
+								<AdditionSource>
+									<Item>ДеревоРегламентныхЗаданий</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРегламентныхЗаданийУправлениеПоискомКонтекстноеМеню" id="239"/>
+								<ExtendedTooltip name="ДеревоРегламентныхЗаданийУправлениеПоискомРасширеннаяПодсказка" id="240"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДеревоРегламентныхЗаданийВыбор</Event>
+								<Event name="BeforeAddRow">ДеревоРегламентныхЗаданийПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ДеревоРегламентныхЗаданийПередУдалением</Event>
+								<Event name="ChoiceProcessing">ДеревоРегламентныхЗаданийОбработкаВыбора</Event>
+								<Event name="BeforeRowChange">ДеревоРегламентныхЗаданийПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="ДеревоРегламентныхЗаданийИспользование" id="16">
+									<DataPath>ДеревоРегламентныхЗаданий.Использование</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Включено</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderPicture>
+										<xr:Ref>StdPicture.ExecuteTask</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоРегламентныхЗаданийИспользованиеКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ДеревоРегламентныхЗаданийИспользованиеРасширеннаяПодсказка" id="241"/>
+								</CheckBoxField>
+								<InputField name="ДеревоРегламентныхЗаданийЗадание" id="43">
+									<DataPath>ДеревоРегламентныхЗаданий.Задание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоРегламентныхЗаданийЗаданиеКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ДеревоРегламентныхЗаданийЗаданиеРасширеннаяПодсказка" id="242"/>
+								</InputField>
+								<CheckBoxField name="ДеревоРегламентныхЗаданийИзбранноеЗадание" id="193">
+									<DataPath>ДеревоРегламентныхЗаданий.ИзбранноеЗадание</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Избранное задание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderPicture>
+										<xr:Ref>StdPicture.AddToFavorites</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоРегламентныхЗаданийИзбранноеЗаданиеКонтекстноеМеню" id="194"/>
+									<ExtendedTooltip name="ДеревоРегламентныхЗаданийИзбранноеЗаданиеРасширеннаяПодсказка" id="243"/>
+								</CheckBoxField>
+								<CheckBoxField name="ДеревоРегламентныхЗаданийПредопределенное" id="14">
+									<DataPath>ДеревоРегламентныхЗаданий.Предопределенное</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предопределенное</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderPicture>
+										<xr:Ref>StdPicture.Constant</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоРегламентныхЗаданийПредопределенноеКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ДеревоРегламентныхЗаданийПредопределенноеРасширеннаяПодсказка" id="244"/>
+								</CheckBoxField>
+								<InputField name="ДеревоРегламентныхЗаданийКоличество" id="46">
+									<DataPath>ДеревоРегламентныхЗаданий.Количество</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество всего / из них включенных</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоРегламентныхЗаданийКоличествоКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ДеревоРегламентныхЗаданийКоличествоРасширеннаяПодсказка" id="245"/>
+								</InputField>
+								<InputField name="ДеревоРегламентныхЗаданийРасписание" id="30">
+									<DataPath>ДеревоРегламентныхЗаданий.Расписание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоРегламентныхЗаданийРасписаниеКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ДеревоРегламентныхЗаданийРасписаниеРасширеннаяПодсказка" id="246"/>
+								</InputField>
+								<InputField name="ДеревоРегламентныхЗаданийСостояние" id="20">
+									<DataPath>ДеревоРегламентныхЗаданий.Состояние</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Состояние последнего запущенного фонового задания</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоРегламентныхЗаданийСостояниеКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ДеревоРегламентныхЗаданийСостояниеРасширеннаяПодсказка" id="247"/>
+								</InputField>
+								<InputField name="ДеревоРегламентныхЗаданийВремяВыполнения" id="159">
+									<DataPath>ДеревоРегламентныхЗаданий.ВремяВыполнения</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>15</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ДеревоРегламентныхЗаданийВремяВыполненияКонтекстноеМеню" id="160"/>
+									<ExtendedTooltip name="ДеревоРегламентныхЗаданийВремяВыполненияРасширеннаяПодсказка" id="248"/>
+								</InputField>
+								<InputField name="ДеревоРегламентныхЗаданийНачало" id="171">
+									<DataPath>ДеревоРегламентныхЗаданий.Начало</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата начала выполнения последнего фонового задания</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоРегламентныхЗаданийНачалоКонтекстноеМеню" id="172"/>
+									<ExtendedTooltip name="ДеревоРегламентныхЗаданийНачалоРасширеннаяПодсказка" id="249"/>
+								</InputField>
+								<InputField name="ДеревоРегламентныхЗаданийКонец" id="173">
+									<DataPath>ДеревоРегламентныхЗаданий.Конец</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата окончания выполнения последнего фонового задания</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоРегламентныхЗаданийКонецКонтекстноеМеню" id="174"/>
+									<ExtendedTooltip name="ДеревоРегламентныхЗаданийКонецРасширеннаяПодсказка" id="250"/>
+								</InputField>
+								<InputField name="ДеревоРегламентныхЗаданийИмяПользователя" id="12">
+									<DataPath>ДеревоРегламентныхЗаданий.ИмяПользователя</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя пользователя, под которым будет запускаться регламентное задание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоРегламентныхЗаданийИмяПользователяКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="ДеревоРегламентныхЗаданийИмяПользователяРасширеннаяПодсказка" id="251"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаФоновыеЗадания" id="77">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фоновые задания</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница фоновые задания</v8:content>
+						</v8:item>
+					</ToolTip>
+					<TitleDataPath>КоличествоФоновыхЗаданий</TitleDataPath>
+					<ExtendedTooltip name="СтраницаФоновыеЗаданияРасширеннаяПодсказка" id="252"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтборПоСостояниюФоновогоЗадания" id="78">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отбор по состоянию фонового задания</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отбор по состоянию фонового задания</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтборПоСостояниюФоновогоЗаданияРасширеннаяПодсказка" id="253"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьОтборПоСостояниюФоновогоЗадания" id="87">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Состояние:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьОтборПоСостояниюФоновогоЗаданияКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="НадписьОтборПоСостояниюФоновогоЗаданияРасширеннаяПодсказка" id="254"/>
+								</LabelDecoration>
+								<CheckBoxField name="ОтборПоСостояниюФоновогоЗаданияЗавершено" id="81">
+									<DataPath>ОтборПоСостояниюФоновогоЗаданияЗавершено</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтборПоСостояниюФоновогоЗаданияЗавершеноКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ОтборПоСостояниюФоновогоЗаданияЗавершеноРасширеннаяПодсказка" id="255"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОтборПоСостояниюФоновогоЗаданияЗавершеноАварийно" id="83">
+									<DataPath>ОтборПоСостояниюФоновогоЗаданияЗавершеноАварийно</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтборПоСостояниюФоновогоЗаданияЗавершеноАварийноКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ОтборПоСостояниюФоновогоЗаданияЗавершеноАварийноРасширеннаяПодсказка" id="256"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОтборПоСостояниюФоновогоЗаданияОтменено" id="85">
+									<DataPath>ОтборПоСостояниюФоновогоЗаданияОтменено</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтборПоСостояниюФоновогоЗаданияОтмененоКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="ОтборПоСостояниюФоновогоЗаданияОтмененоРасширеннаяПодсказка" id="257"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОтборПоСостояниюФоновогоЗаданияАктивно" id="79">
+									<DataPath>ОтборПоСостояниюФоновогоЗаданияАктивно</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтборПоСостояниюФоновогоЗаданияАктивноКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="ОтборПоСостояниюФоновогоЗаданияАктивноРасширеннаяПодсказка" id="258"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОтборПоПериоду" id="89">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отбор по периоду</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отбор по периоду</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтборПоПериодуРасширеннаяПодсказка" id="259"/>
+							<ChildItems>
+								<InputField name="ВидОтбораПоПериоду" id="90">
+									<DataPath>ВидОтбораПоПериоду</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>За период</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отбор фоновых заданий по периоду выполнения</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>19</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ВидОтбораПоПериодуКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ВидОтбораПоПериодуРасширеннаяПодсказка" id="260"/>
+									<Events>
+										<Event name="OnChange">ВидОтбораПоПериодуПриИзменении</Event>
+										<Event name="Clearing">ВидОтбораПоПериодуОчистка</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаПериод" id="98">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа период</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа период</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="261"/>
+									<ChildItems>
+										<InputField name="ОтборПоПериодуДатаНачала" id="155">
+											<DataPath>ОтборПоПериодуДатаНачала</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ClearButton>true</ClearButton>
+											<ContextMenu name="ОтборПоПериодуДатаНачалаКонтекстноеМеню" id="156"/>
+											<ExtendedTooltip name="ОтборПоПериодуДатаНачалаРасширеннаяПодсказка" id="262"/>
+										</InputField>
+										<LabelDecoration name="НадписьОтборПоПериодуДатаОкончания" id="96">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>-</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<ContextMenu name="НадписьОтборПоПериодуДатаОкончанияКонтекстноеМеню" id="97"/>
+											<ExtendedTooltip name="НадписьОтборПоПериодуДатаОкончанияРасширеннаяПодсказка" id="263"/>
+										</LabelDecoration>
+										<InputField name="ОтборПоПериодуДатаОкончания" id="157">
+											<DataPath>ОтборПоПериодуДатаОкончания</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ClearButton>true</ClearButton>
+											<ContextMenu name="ОтборПоПериодуДатаОкончанияКонтекстноеМеню" id="158"/>
+											<ExtendedTooltip name="ОтборПоПериодуДатаОкончанияРасширеннаяПодсказка" id="264"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАнализироватьРегламентныеЗадания" id="175">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа анализировать регламентные задания</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа анализировать регламентные задания</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАнализироватьРегламентныеЗаданияРасширеннаяПодсказка" id="265"/>
+							<ChildItems>
+								<CheckBoxField name="АнализироватьРегламентныеЗадания" id="163">
+									<DataPath>АнализироватьРегламентныеЗадания</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Определять регламентное задание, которое инициировало запуск фонового задания</v8:content>
+										</v8:item>
+									</ToolTip>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="АнализироватьРегламентныеЗаданияКонтекстноеМеню" id="164"/>
+									<ExtendedTooltip name="АнализироватьРегламентныеЗаданияРасширеннаяПодсказка" id="266"/>
+									<Events>
+										<Event name="OnChange">АнализироватьРегламентныеЗаданияПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ОтключитьПредупрежденияОВозможномЗамедлении" id="176">
+									<DataPath>ОтключитьПредупрежденияОВозможномЗамедлении</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отключить вопрос о возможном замедлении при анализе регламентных заданий</v8:content>
+										</v8:item>
+									</ToolTip>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтключитьПредупрежденияОВозможномЗамедленииКонтекстноеМеню" id="177"/>
+									<ExtendedTooltip name="ОтключитьПредупрежденияОВозможномЗамедленииРасширеннаяПодсказка" id="267"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОтборПоРегламентномуЗаданию" id="165">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отбор по регламентному заданию</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отбор по регламентному заданию</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтборПоРегламентномуЗаданиюРасширеннаяПодсказка" id="268"/>
+							<ChildItems>
+								<CheckBoxField name="ОтбиратьПоРегламентномуЗаданию" id="102">
+									<DataPath>ОтбиратьПоРегламентномуЗаданию</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтбиратьПоРегламентномуЗаданиюКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ОтбиратьПоРегламентномуЗаданиюРасширеннаяПодсказка" id="269"/>
+								</CheckBoxField>
+								<InputField name="ОтборПоРегламентномуЗаданию" id="100">
+									<DataPath>ОтборПоРегламентномуЗаданию</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>40</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ОтборПоРегламентномуЗаданиюКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="ОтборПоРегламентномуЗаданиюРасширеннаяПодсказка" id="270"/>
+									<Events>
+										<Event name="OnChange">ОтборПоРегламентномуЗаданиюПриИзменении</Event>
+										<Event name="StartChoice">ОтборПоРегламентномуЗаданиюНачалоВыбора</Event>
+										<Event name="StartListChoice">ОтборПоРегламентномуЗаданиюНачалоВыбораИзСписка</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОтборПоВидуЗадания" id="166">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отбор по виду задания</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отбор по виду задания</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтборПоВидуЗаданияРасширеннаяПодсказка" id="271"/>
+							<ChildItems>
+								<CheckBoxField name="ОтбиратьПоВидуЗадания" id="134">
+									<DataPath>ОтбиратьПоВидуЗадания</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтбиратьПоВидуЗаданияКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="ОтбиратьПоВидуЗаданияРасширеннаяПодсказка" id="272"/>
+								</CheckBoxField>
+								<LabelDecoration name="ОтступОтборПоВидуЗадания" id="169">
+									<Width>6</Width>
+									<ContextMenu name="ОтступОтборПоВидуЗаданияКонтекстноеМеню" id="170"/>
+									<ExtendedTooltip name="ОтступОтборПоВидуЗаданияРасширеннаяПодсказка" id="273"/>
+								</LabelDecoration>
+								<InputField name="ОтборПоВидуЗадания" id="136">
+									<DataPath>ОтборПоВидуЗадания</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>40</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ОтборПоВидуЗаданияКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ОтборПоВидуЗаданияРасширеннаяПодсказка" id="274"/>
+									<Events>
+										<Event name="OnChange">ОтборПоВидуЗаданияПриИзменении</Event>
+										<Event name="StartChoice">ОтборПоВидуЗаданияНачалоВыбора</Event>
+										<Event name="StartListChoice">ОтборПоВидуЗаданияНачалоВыбораИзСписка</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОтборы" id="147">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отборы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отборы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтборыРасширеннаяПодсказка" id="275"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаОтборыЛево" id="148">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отборы лево</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отборы лево</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОтборыЛевоРасширеннаяПодсказка" id="276"/>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОтборыПраво" id="149">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отборы право</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отборы право</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОтборыПравоРасширеннаяПодсказка" id="277"/>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТаблицаФоновыхЗаданий" id="104">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ТаблицаФоновыхЗаданий</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаФоновыхЗаданийКонтекстноеМеню" id="105">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ТаблицаФоновыхЗаданийКонтекстноеМенюНайтиРегламентноеЗадание" id="146">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.НайтиРегламентноеЗадание</CommandName>
+										<ExtendedTooltip name="ТаблицаФоновыхЗаданийКонтекстноеМенюНайтиРегламентноеЗаданиеРасширеннаяПодсказка" id="278"/>
+									</Button>
+									<Button name="ТаблицаФоновыхЗаданийКонтекстноеМенюОпределитьРегламентноеЗадание" id="188">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОпределитьРегламентноеЗадание</CommandName>
+										<ExtendedTooltip name="ТаблицаФоновыхЗаданийКонтекстноеМенюОпределитьРегламентноеЗаданиеРасширеннаяПодсказка" id="279"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ТаблицаФоновыхЗаданийКоманднаяПанель" id="106">
+								<ChildItems>
+									<Button name="ТаблицаФоновыхЗаданийОбновитьФоновыеЗадания" id="131">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьФоновыеЗадания</CommandName>
+										<ExtendedTooltip name="ТаблицаФоновыхЗаданийОбновитьФоновыеЗаданияРасширеннаяПодсказка" id="280"/>
+									</Button>
+									<Button name="ТаблицаФоновыхЗаданийОткрытьФоновоеЗадание" id="142">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОткрытьФоновоеЗадание</CommandName>
+										<ExtendedTooltip name="ТаблицаФоновыхЗаданийОткрытьФоновоеЗаданиеРасширеннаяПодсказка" id="281"/>
+									</Button>
+									<Button name="ТаблицаФоновыхЗаданийОтменитьФоновоеЗадание" id="132">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОтменитьФоновоеЗадание</CommandName>
+										<ExtendedTooltip name="ТаблицаФоновыхЗаданийОтменитьФоновоеЗаданиеРасширеннаяПодсказка" id="282"/>
+									</Button>
+									<Button name="ТаблицаФоновыхЗаданийНайтиРегламентноеЗадание" id="145">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.НайтиРегламентноеЗадание</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаФоновыхЗаданийНайтиРегламентноеЗаданиеРасширеннаяПодсказка" id="283"/>
+									</Button>
+									<Button name="ТаблицаФоновыхЗаданийОпределитьРегламентноеЗадание" id="187">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОпределитьРегламентноеЗадание</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаФоновыхЗаданийОпределитьРегламентноеЗаданиеРасширеннаяПодсказка" id="284"/>
+									</Button>
+									<Button name="ТаблицаФоновыхЗаданийСортироватьСписокПоВозрастанию" id="127">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаФоновыхЗаданий.StandardCommand.SortListAsc</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаФоновыхЗаданийСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="285"/>
+									</Button>
+									<Button name="ТаблицаФоновыхЗаданийСортироватьСписокПоУбыванию" id="128">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаФоновыхЗаданий.StandardCommand.SortListDesc</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаФоновыхЗаданийСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="286"/>
+									</Button>
+									<Button name="ТаблицаФоновыхЗаданийПереместитьВверх" id="129">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаФоновыхЗаданий.StandardCommand.MoveUp</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаФоновыхЗаданийПереместитьВверхРасширеннаяПодсказка" id="287"/>
+									</Button>
+									<Button name="ТаблицаФоновыхЗаданийПереместитьВниз" id="130">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаФоновыхЗаданий.StandardCommand.MoveDown</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаФоновыхЗаданийПереместитьВнизРасширеннаяПодсказка" id="288"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаФоновыхЗаданийРасширеннаяПодсказка" id="289"/>
+							<SearchStringAddition name="ТаблицаФоновыхЗаданийСтрокаПоиска" id="290">
+								<AdditionSource>
+									<Item>ТаблицаФоновыхЗаданий</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаФоновыхЗаданийСтрокаПоискаКонтекстноеМеню" id="291"/>
+								<ExtendedTooltip name="ТаблицаФоновыхЗаданийСтрокаПоискаРасширеннаяПодсказка" id="292"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаФоновыхЗаданийСостояниеПросмотра" id="293">
+								<AdditionSource>
+									<Item>ТаблицаФоновыхЗаданий</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаФоновыхЗаданийСостояниеПросмотраКонтекстноеМеню" id="294"/>
+								<ExtendedTooltip name="ТаблицаФоновыхЗаданийСостояниеПросмотраРасширеннаяПодсказка" id="295"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаФоновыхЗаданийУправлениеПоиском" id="296">
+								<AdditionSource>
+									<Item>ТаблицаФоновыхЗаданий</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаФоновыхЗаданийУправлениеПоискомКонтекстноеМеню" id="297"/>
+								<ExtendedTooltip name="ТаблицаФоновыхЗаданийУправлениеПоискомРасширеннаяПодсказка" id="298"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ТаблицаФоновыхЗаданийВыбор</Event>
+								<Event name="BeforeRowChange">ТаблицаФоновыхЗаданийПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ТаблицаФоновыхЗаданийНаименование" id="115">
+									<DataPath>ТаблицаФоновыхЗаданий.Наименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаФоновыхЗаданийНаименованиеКонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="ТаблицаФоновыхЗаданийНаименованиеРасширеннаяПодсказка" id="299"/>
+								</InputField>
+								<InputField name="ТаблицаФоновыхЗаданийСостояние" id="121">
+									<DataPath>ТаблицаФоновыхЗаданий.Состояние</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаФоновыхЗаданийСостояниеКонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="ТаблицаФоновыхЗаданийСостояниеРасширеннаяПодсказка" id="300"/>
+								</InputField>
+								<InputField name="ТаблицаФоновыхЗаданийНачало" id="111">
+									<DataPath>ТаблицаФоновыхЗаданий.Начало</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаФоновыхЗаданийНачалоКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ТаблицаФоновыхЗаданийНачалоРасширеннаяПодсказка" id="301"/>
+								</InputField>
+								<InputField name="ТаблицаФоновыхЗаданийКонец" id="113">
+									<DataPath>ТаблицаФоновыхЗаданий.Конец</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаФоновыхЗаданийКонецКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ТаблицаФоновыхЗаданийКонецРасширеннаяПодсказка" id="302"/>
+								</InputField>
+								<InputField name="ТаблицаФоновыхЗаданийРасположение" id="117">
+									<DataPath>ТаблицаФоновыхЗаданий.Расположение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаФоновыхЗаданийРасположениеКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ТаблицаФоновыхЗаданийРасположениеРасширеннаяПодсказка" id="303"/>
+								</InputField>
+								<InputField name="ТаблицаФоновыхЗаданийРегламентноеЗаданиеПредставление" id="119">
+									<DataPath>ТаблицаФоновыхЗаданий.РегламентноеЗаданиеПредставление</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Регламентное задание, которое инициировало запуск фонового задания</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаФоновыхЗаданийРегламентноеЗаданиеПредставлениеКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ТаблицаФоновыхЗаданийРегламентноеЗаданиеПредставлениеРасширеннаяПодсказка" id="304"/>
+								</InputField>
+								<InputField name="ТаблицаФоновыхЗаданийВидЗадания" id="123">
+									<DataPath>ТаблицаФоновыхЗаданий.ВидЗадания</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид регламентного задания, которое инициировало запуск фонового задания</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаФоновыхЗаданийВидЗаданияКонтекстноеМеню" id="124"/>
+									<ExtendedTooltip name="ТаблицаФоновыхЗаданийВидЗаданияРасширеннаяПодсказка" id="305"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.бук_РегламентныеИФоновыеЗадания</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДеревоРегламентныхЗаданий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево регламентных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Расписание" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расписание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяПользователя" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Предопределенное" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предопределенное</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Использование" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Состояние" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="УникальныйИдентификатор" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уникальный идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Задание" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВремяВыполнения" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время выполнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидЗадания" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид задания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Выполнялось" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнялось</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторПоследнегоЗадания" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор последнего задания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИнформацияОбОшибке" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация об ошибке</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Начало" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Конец" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конец</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИзбранноеЗадание" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Избранное задание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИмяМетаданных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоСостояниюРегламентногоЗадания" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по состоянию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ОтборПоСостояниюРегламентногоЗадания</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ГруппироватьПоВидуЗадания" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группировать по виду задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ГруппироватьПоВидуЗадания</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИдентификаторЗапускаемогоЗадания" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор запускаемого задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидыРегламентныхЗаданий" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды регламентных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВидЗадания" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид задания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаФоновыхЗаданий" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица фоновых заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВидЗадания" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид задания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ключ" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Начало" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Состояние" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="УникальныйИдентификатор" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уникальный идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Конец" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конец</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИнформацияОбОшибке" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация об ошибке</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Расположение" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расположение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РегламентноеЗадание" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламентное задание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РегламентноеЗаданиеПредставление" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламентное задание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяМетода" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя метода</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОкончанияУказана" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата окончания указана</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОтборПоСостояниюФоновогоЗаданияАктивно" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполняется</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтборПоСостояниюФоновогоЗаданияАктивно</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборПоСостояниюФоновогоЗаданияЗавершено" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтборПоСостояниюФоновогоЗаданияЗавершено</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборПоСостояниюФоновогоЗаданияЗавершеноАварийно" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершено с ошибками</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтборПоСостояниюФоновогоЗаданияЗавершеноАварийно</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборПоСостояниюФоновогоЗаданияОтменено" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтборПоСостояниюФоновогоЗаданияОтменено</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВидОтбораПоПериоду" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид отбора по периоду</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Save>
+				<Field>ВидОтбораПоПериоду</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборПоПериоду" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по периоду</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоРегламентномуЗаданию" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по регламентному заданию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ОтборПоРегламентномуЗаданию</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтбиратьПоРегламентномуЗаданию" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбирать по регламентному заданию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтбиратьПоРегламентномуЗаданию</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтбиратьПоВидуЗадания" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбирать по виду задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтбиратьПоВидуЗадания</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборПоВидуЗадания" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по виду задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ОтборПоВидуЗадания</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборПоПериодуДатаНачала" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по периоду дата начала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>ОтборПоПериодуДатаНачала</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборПоПериодуДатаОкончания" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по периоду дата окончания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>ОтборПоПериодуДатаОкончания</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТаблицаРегламентныхЗаданий" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица регламентных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ключ" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Расписание" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расписание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяПользователя" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Предопределенное" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предопределенное</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Использование" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Начало" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Состояние" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="УникальныйИдентификатор" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уникальный идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Конец" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конец</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеЗадания" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование задания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеДляСортировки" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование для сортировки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидЗадания" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид задания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Активно" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активно</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Выполнялось" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнялось</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторПоследнегоЗадания" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор последнего задания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИнформацияОбОшибке" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация об ошибке</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗавершеноСОшибками" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Завершено с ошибками</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВремяВыполнения" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время выполнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПодходитПоНаименованию" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подходит по наименованию</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьПараметры" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть параметры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИзбранноеЗадание" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Избранное задание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КоличествоРегламентныхЗаданий" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество регламентных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоФоновыхЗаданий" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество фоновых заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АнализироватьРегламентныеЗадания" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализировать регламентные задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>АнализироватьРегламентныеЗадания</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИдентификаторЗаданияДляИстории" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания для истории</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтключитьПредупрежденияОВозможномЗамедлении" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить предупреждения о возможном замедлении</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтключитьПредупрежденияОВозможномЗамедлении</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИмяCOMСоединителя" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя COM-соединителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресАгентаСервера" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>АдресАгентаСервера</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИмяАдминистратораИнформационнойБазы" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя администратора информационной базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИмяАдминистратораИнформационнойБазы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИмяАдминистратораКластера" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя администратора кластера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИмяАдминистратораКластера</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПарольАдминистратораИнформационнойБазы" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль администратора информационной базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПарольАдминистратораИнформационнойБазы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПарольАдминистратораКластера" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль администратора кластера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПарольАдминистратораКластера</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПортАгентаСервера" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ПортАгентаСервера</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПортМенеджераКластера" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порт менеджера кластера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ПортМенеджераКластера</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СохранятьПароли" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранять пароли</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>СохранятьПароли</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СостояниеИспользованияРегламентныхЗаданий" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентные задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяИнформационнойБазы" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя информационной базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИмяИнформационнойБазы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОбновлятьСостояниеИспользованияРегламентныхЗаданийПриЗапуске" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновлять состояние использования регламентных заданий при запуске</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОбновлятьСостояниеИспользованияРегламентныхЗаданийПриЗапуске</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗадержкаПриОбновленииСпискаРегламентныхЗаданий" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задержка при обновлении списка регламентных заданий (сек.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ЗадержкаПриОбновленииСпискаРегламентныхЗаданий</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВыполнятьОперацииАдминистрированияНаСервере" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнять операции администрирования на сервере</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВыполнятьОперацииАдминистрированияНаСервере</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборПоСостояниюРегламентногоЗаданияТекущее" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по состоянию регламентного задания текущее</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ОтборПоСостояниюРегламентногоЗаданияТекущее</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ГруппироватьПоВидуЗаданияТекущее" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группировать по виду задания текущее</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ГруппироватьПоВидуЗаданияТекущее</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборПоНаименованиюРегламентногоЗадания" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по наименованию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СостояниеИспользованияРегламентныхЗаданийТекст" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентные задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИзбранныеЗадания" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Избранные задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>ИзбранныеЗадания</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>v8:UUID</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="РасписаниеЗапускаемогоЗадания" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание запускаемого задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВыключитьЗапускаемоеЗадание" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выключить запускаемое задание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоРегламентныхЗаданий</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоРегламентныхЗаданий.УникальныйИдентификатор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:UUID">00000000-0000-0000-0000-000000000000</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:MediumBlue</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СостояниеИспользованияРегламентныхЗаданийТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СостояниеИспользованияРегламентныхЗаданий</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Lime</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СостояниеИспользованияРегламентныхЗаданийТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СостояниеИспользованияРегламентныхЗаданий</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">2</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:LightPink</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьРегламентныеЗадания" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить регламентные задания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьРегламентныеЗадания</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="НастроитьРасписание" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SetTime</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастроитьРасписание</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="РазвернутьДеревоРегламентныхЗаданий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть дерево регламентных заданий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РазвернутьДеревоРегламентныхЗаданий</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ВключитьВыключитьРегламентноеЗадание" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить выключить регламентное задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВключитьВыключитьРегламентноеЗадание</Action>
+		</Command>
+		<Command name="ВыполнитьРегламентноеЗаданиеНепосредственно" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить задание непосредственно</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.BusinessProcessStart</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьРегламентноеЗаданиеНепосредственно</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ВыполнитьРегламентноеЗаданиеВФоне" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить в фоне</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить регламентное задание в фоне</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьРегламентноеЗаданиеВФоне</Action>
+		</Command>
+		<Command name="ЗапуститьРегламентноеЗадание" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить как регламентное задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗапуститьРегламентноеЗадание</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОтменитьРегламентноеЗадание" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить текущее фоновое задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Stop</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтменитьРегламентноеЗадание</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОбновитьФоновыеЗадания" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить фоновые задания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьФоновыеЗадания</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОтменитьФоновоеЗадание" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Stop</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтменитьФоновоеЗадание</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьФоновоеЗадание" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть фоновое задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InputFieldOpen</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьФоновоеЗадание</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="НайтиФоновыеЗадания" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти фоновые задания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти фоновые задания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SyncContents</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НайтиФоновыеЗадания</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="НайтиРегламентноеЗадание" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти регламентное задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти регламентное задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.FindInList</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НайтиРегламентноеЗадание</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьПоследнееЗадание" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть последнее задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть последнее задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПоследнееЗадание</Action>
+		</Command>
+		<Command name="НастроитьПараметрыАдминистрирования" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить параметры администрирования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить параметры администрирования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SettingsStorage</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастроитьПараметрыАдминистрирования</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ВключитьВыключитьИспользованиеРегламентныхЗаданий" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить выключить использование регламентных заданий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВключитьВыключитьИспользованиеРегламентныхЗаданий</Action>
+		</Command>
+		<Command name="ОбновитьСостояниеИспользованияРегламентныхЗаданий" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить состояние использования регламентных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить состояние использования регламентных заданий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьСостояниеИспользованияРегламентныхЗаданий</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="НастройкиОбработки" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки обработки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ListSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастройкиОбработки</Action>
+		</Command>
+		<Command name="ОпределитьРегламентноеЗадание" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Определить регламентное задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Определить регламентное задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SyncContents</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОпределитьРегламентноеЗадание</Action>
+		</Command>
+		<Command name="ДобавитьУдалитьРегламентноеЗаданиеИзИзбранного" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить/удалить из избранного</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить/удалить регламентное задание из избранного</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AddToFavorites</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьУдалитьРегламентноеЗаданиеИзИзбранного</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ОтборЗаданийПоВидуЗадания">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="ИдентификаторЗаданияДляИстории">
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ИмяЗаданияДляИстории">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

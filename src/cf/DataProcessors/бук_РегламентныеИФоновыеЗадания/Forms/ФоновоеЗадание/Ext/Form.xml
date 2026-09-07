@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ВидЗадания" id="1">
+			<DataPath>ВидЗадания</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ВидЗаданияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ВидЗаданияРасширеннаяПодсказка" id="26"/>
+		</InputField>
+		<InputField name="РегламентноеЗаданиеПредставление" id="19">
+			<DataPath>РегламентноеЗаданиеПредставление</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="РегламентноеЗаданиеПредставлениеКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="РегламентноеЗаданиеПредставлениеРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="Наименование" id="13">
+			<DataPath>Наименование</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="28"/>
+		</InputField>
+		<InputField name="Состояние" id="21">
+			<DataPath>Состояние</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="СостояниеКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="29"/>
+		</InputField>
+		<UsualGroup name="ГруппаПериод" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<InputField name="Начало" id="15">
+					<DataPath>Начало</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период выполнения</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НачалоКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="НачалоРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<LabelDecoration name="НадписьКонец" id="24">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>-</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="НадписьКонецКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="НадписьКонецРасширеннаяПодсказка" id="32"/>
+				</LabelDecoration>
+				<InputField name="Конец" id="11">
+					<DataPath>Конец</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="КонецКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="КонецРасширеннаяПодсказка" id="33"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ИдентификаторЗадания" id="3">
+			<DataPath>ИдентификаторЗадания</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ИдентификаторЗаданияКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ИдентификаторЗаданияРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<InputField name="Ключ" id="9">
+			<DataPath>Ключ</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="КлючКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="КлючРасширеннаяПодсказка" id="35"/>
+		</InputField>
+		<InputField name="ИмяМетода" id="5">
+			<DataPath>ИмяМетода</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ИмяМетодаКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ИмяМетодаРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="Расположение" id="17">
+			<DataPath>Расположение</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="РасположениеКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="РасположениеРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<InputField name="ИнформацияОбОшибке" id="7">
+			<DataPath>ИнформацияОбОшибке</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ИнформацияОбОшибкеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИнформацияОбОшибкеРасширеннаяПодсказка" id="38"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ИдентификаторЗадания" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидЗадания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Наименование" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Ключ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Начало" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Конец" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конец</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Состояние" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнформацияОбОшибке" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация об ошибке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Расположение" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расположение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РегламентноеЗаданиеПредставление" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентное задание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяМетода" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя метода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Parameters>
+		<Parameter name="ИдентификаторЗадания">
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>
