@@ -1,5 +1,5 @@
 {
-  "reportPath": "C:\\OtusRepo\\OtusProject\\tests",
+  "reportPath": "$workspaceRoot/build/out/allure",
   "closeAfterTests": true,
   "filter": {
     "extensions": [
