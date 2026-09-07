@@ -13,6 +13,7 @@ pipeline {
         EPF_STORAGE_PATH = 'C:\\OtusRepo\\OtusProject\\build\\epf'
         GIT_EPF_STORAGE_PATH = 'C:\\OtusRepo\\OtusProject\\src\\epf'
         GITSYNC_EXTENSION = 'Yaxunit'
+        BUILD_NUMBER = '1'
     }
 
     stages {
@@ -37,7 +38,7 @@ pipeline {
 
         stage('Yaxunit тесты') {
             steps {
-                bat 'chcp 65001\n "C:\\Program Files\\1cv8\\8.3.27.1508\\bin\\1cv8c.exe" ENTERPRISE /IBConnectionString "File=""C:\\Base1c\\DemoUnitTest"";" /C "RunUnitTests=C:\\OtusRepo\\OtusProject\\tools\\Yaxunit.json" /N"Администратор"'                
+                bat 'chcp 65001\n "C:\\Program Files\\1cv8\\8.3.27.1508\\bin\\1cv8c.exe" ENTERPRISE /IBConnectionString "File=""C:\\Base1c\\DemoUnitTest"";" /C "RunUnitTests=C:\\OtusRepo\\OtusProject\\tools\\Yaxunit.json" /N"Администратор"\n git add .\n git commit -m "%BUILD_NUMBER%"\n git push origin main'                
              }       
         }
     }
