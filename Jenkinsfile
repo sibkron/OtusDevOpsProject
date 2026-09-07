@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Synchronize repo') {
             steps {
-                bat 'chcp 65001\n gitsync sync --storage-user "%USER_1C%" "%STORAGE_PATH%" "%GIT_REPO_PATH%"\n taskkill /f /im 1cv8.exe\n taskkill /f /im 1cv8c.exe' 
+                bat 'chcp 65001\n gitsync sync --storage-user "%USER_1C%" "%STORAGE_PATH%" "%GIT_REPO_PATH%"' 
             }
         }
 
