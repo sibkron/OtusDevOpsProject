@@ -8,14 +8,23 @@ pipeline {
         STORAGE_PATH = 'C:\\Gitstorage\\Storage'
         GIT_REPO_PATH = 'C:\\Gitstorage\\Gitst'
         USER_1C = 'admin'
+        EPF_STORAGE_PATH = 'C:\\OtusRepo\\OtusProject\\build\\epf'
+        GIT_EPF_STORAGE_PATH = 'C:\\OtusRepo\\OtusProject\\src\\epf'
     }
 
     stages {
-        stage('Gitsync') {
+        stage('Synchronize repo') {
             steps {
                 bat 'chcp 65001\n gitsync sync --storage-user "%USER_1C%" "%STORAGE_PATH%" "%GIT_REPO_PATH%"' 
             }
         }
+
+        stage('Synchronize data processors') {
+            steps {
+                bat 'chcp 65001\n precommit1c --decompile "%EPF_STORAGE_PATH%" "%GIT_EPF_STORAGE_PATH%"' 
+            }
+        }
+
         stage('Build test base') {
             steps {
                 bat 'chcp 65001\n vrunner init-dev' 
