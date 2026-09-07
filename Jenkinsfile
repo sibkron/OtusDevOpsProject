@@ -28,6 +28,12 @@ pipeline {
             }
         }
 
+        stage('Сборка расширения') {
+            steps {
+                bat 'chcp 65001\n vrunner cfe load' 
+            }
+        }
+
         stage('Синтаксический контроль') {
             steps {
                 bat 'chcp 65001\n vrunner syntax-check'                
