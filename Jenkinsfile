@@ -17,9 +17,9 @@ pipeline {
     }
 
     stages {
-        stage('Синхронизация репозитория расширения') {
+        stage('Синхронизация репозитория') {
             steps {
-                bat 'chcp 65001\n gitsync sync --storage-user "%USER_1C%" -e "%GITSYNC_EXTENSION%" "%STORAGE_PATH_CFE%" "%GIT_REPO_PATH_CFE%"' 
+                bat 'chcp 65001\n gitsync sync --storage-user "%USER_1C%" "%STORAGE_PATH_CFE%" "%GIT_REPO_PATH_CFE%"' 
             }
         }
 
