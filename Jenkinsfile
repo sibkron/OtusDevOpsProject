@@ -52,7 +52,7 @@ pipeline {
             bat 'echo failure'
         }
         always {
-            allure includeProperties: false, jdk: '', resultPolicy: 'LEAVE_AS_IS', results: [[path: 'out/syntax-check/allure'], [path: 'tests']]
+            allure includeProperties: false, jdk: '', resultPolicy: 'LEAVE_AS_IS', results: [[path: 'out/syntax-check/allure'], [path: 'out/yaxunit']]
         }
     }
 
