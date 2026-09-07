@@ -1,0 +1,55 @@
+{
+"uuid": "7674036b-c7a8-4e54-9153-1619dad4507f",
+"historyId": "adb2ef85ed112e4f59a9cef59db01f31",
+"testCaseId": "adb2ef85ed112e4f59a9cef59db01f31",
+"fullName": "Док_ПоступлениеДенег.ПроверкаПроведенияДокументовПоступлениеДенег [Сервер]",
+"name": "ПроверкаПроведенияДокументовПоступлениеДенег",
+"parameters": [],
+"links": [],
+"labels": [
+{
+"name": "language",
+"value": "bsl"
+},
+{
+"name": "framework",
+"value": "YAxUnit"
+},
+{
+"name": "epic",
+"value": "Документ"
+},
+{
+"name": "feature",
+"value": "ПоступлениеДенег"
+},
+{
+"name": "parentSuite",
+"value": "Unit tests"
+},
+{
+"name": "suite",
+"value": "Док_ПоступлениеДенег"
+},
+{
+"name": "subSuite",
+"value": "Тесты документа Поступление денег [Сервер]"
+},
+{
+"name": "tag",
+"value": "Сервер"
+},
+{
+"name": "tag",
+"value": "Позитив"
+}
+],
+"status": "passed",
+"statusDetails": {
+"message": null,
+"trace": null
+},
+"start": 1788775572338,
+"stop": 1788775572388,
+"steps": []
+}

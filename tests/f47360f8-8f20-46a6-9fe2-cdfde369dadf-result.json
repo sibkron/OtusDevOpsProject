@@ -1,0 +1,55 @@
+{
+"uuid": "f47360f8-8f20-46a6-9fe2-cdfde369dadf",
+"historyId": "f5a325f516c41aad77d4236bba01d058",
+"testCaseId": "f5a325f516c41aad77d4236bba01d058",
+"fullName": "Док_РасходТовара.ПроверкаПроведенияДокументовРасход [Сервер]",
+"name": "ПроверкаПроведенияДокументовРасход",
+"parameters": [],
+"links": [],
+"labels": [
+{
+"name": "language",
+"value": "bsl"
+},
+{
+"name": "framework",
+"value": "YAxUnit"
+},
+{
+"name": "epic",
+"value": "Документ"
+},
+{
+"name": "feature",
+"value": "РасходТовара"
+},
+{
+"name": "parentSuite",
+"value": "Unit tests"
+},
+{
+"name": "suite",
+"value": "Док_РасходТовара"
+},
+{
+"name": "subSuite",
+"value": "Тесты документа Расход товара [Сервер]"
+},
+{
+"name": "tag",
+"value": "Сервер"
+},
+{
+"name": "tag",
+"value": "Позитив"
+}
+],
+"status": "passed",
+"statusDetails": {
+"message": null,
+"trace": null
+},
+"start": 1788775571062,
+"stop": 1788775571195,
+"steps": []
+}

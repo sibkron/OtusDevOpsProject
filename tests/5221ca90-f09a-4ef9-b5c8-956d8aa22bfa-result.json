@@ -1,0 +1,55 @@
+{
+"uuid": "5221ca90-f09a-4ef9-b5c8-956d8aa22bfa",
+"historyId": "71923c1dedf0d2eaaee6240ada025224",
+"testCaseId": "71923c1dedf0d2eaaee6240ada025224",
+"fullName": "Док_РасходТовара.ПроверкаДвиженийРасходаПоВзаиморасчетам [Сервер]",
+"name": "ПроверкаДвиженийРасходаПоВзаиморасчетам",
+"parameters": [],
+"links": [],
+"labels": [
+{
+"name": "language",
+"value": "bsl"
+},
+{
+"name": "framework",
+"value": "YAxUnit"
+},
+{
+"name": "epic",
+"value": "Документ"
+},
+{
+"name": "feature",
+"value": "РасходТовара"
+},
+{
+"name": "parentSuite",
+"value": "Unit tests"
+},
+{
+"name": "suite",
+"value": "Док_РасходТовара"
+},
+{
+"name": "subSuite",
+"value": "Тесты документа Расход товара [Сервер]"
+},
+{
+"name": "tag",
+"value": "Сервер"
+},
+{
+"name": "tag",
+"value": "Позитив"
+}
+],
+"status": "passed",
+"statusDetails": {
+"message": null,
+"trace": null
+},
+"start": 1788775571203,
+"stop": 1788775571323,
+"steps": []
+}
