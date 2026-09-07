@@ -1,0 +1,55 @@
+{
+"uuid": "c2214b7c-2460-4a39-905b-5a8d2894f0ce",
+"historyId": "833267f1ba4477608166a07830277f9b",
+"testCaseId": "833267f1ba4477608166a07830277f9b",
+"fullName": "РН_ТоварныеЗапасы.ПроверкаВыводаТоварныхЗапасовВНольНегатив [Сервер]",
+"name": "ПроверкаВыводаТоварныхЗапасовВНольНегатив",
+"parameters": [],
+"links": [],
+"labels": [
+{
+"name": "language",
+"value": "bsl"
+},
+{
+"name": "framework",
+"value": "YAxUnit"
+},
+{
+"name": "epic",
+"value": "Регистр накопления"
+},
+{
+"name": "feature",
+"value": "ТоварныеЗапасы"
+},
+{
+"name": "parentSuite",
+"value": "Unit tests"
+},
+{
+"name": "suite",
+"value": "РН_ТоварныеЗапасы"
+},
+{
+"name": "subSuite",
+"value": "Контроль остатков по товарным запасам [Сервер]"
+},
+{
+"name": "tag",
+"value": "Сервер"
+},
+{
+"name": "tag",
+"value": "Негатив"
+}
+],
+"status": "passed",
+"statusDetails": {
+"message": null,
+"trace": null
+},
+"start": 1788773491657,
+"stop": 1788773491771,
+"steps": []
+}

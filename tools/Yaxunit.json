@@ -1,5 +1,5 @@
 {
-  "reportPath": "",
+  "reportPath": "C:\\OtusRepo\\OtusProject\\tests",
   "closeAfterTests": true,
   "filter": {
     "extensions": [
@@ -9,7 +9,7 @@
   "settings": {
     "ВТранзакции": false
   },
-  "reportFormat": "jUnit",
+  "reportFormat": "allure",
   "showReport": false,
   "logging": {
     "file": "",

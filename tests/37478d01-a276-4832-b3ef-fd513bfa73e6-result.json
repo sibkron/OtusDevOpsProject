@@ -1,0 +1,55 @@
+{
+"uuid": "37478d01-a276-4832-b3ef-fd513bfa73e6",
+"historyId": "ab859f5202c4044c966ab5efabcc5ff4",
+"testCaseId": "ab859f5202c4044c966ab5efabcc5ff4",
+"fullName": "Док_ПриходТовара.ПроверкаДвиженийПриходаПоТоварнымЗапасам [Сервер]",
+"name": "ПроверкаДвиженийПриходаПоТоварнымЗапасам",
+"parameters": [],
+"links": [],
+"labels": [
+{
+"name": "language",
+"value": "bsl"
+},
+{
+"name": "framework",
+"value": "YAxUnit"
+},
+{
+"name": "epic",
+"value": "Документ"
+},
+{
+"name": "feature",
+"value": "ПриходТовара"
+},
+{
+"name": "parentSuite",
+"value": "Unit tests"
+},
+{
+"name": "suite",
+"value": "Док_ПриходТовара"
+},
+{
+"name": "subSuite",
+"value": "Тесты документа Приход товара [Сервер]"
+},
+{
+"name": "tag",
+"value": "Сервер"
+},
+{
+"name": "tag",
+"value": "Позитив"
+}
+],
+"status": "passed",
+"statusDetails": {
+"message": null,
+"trace": null
+},
+"start": 1788773491988,
+"stop": 1788773492077,
+"steps": []
+}
