@@ -36,6 +36,19 @@ pipeline {
                 bat 'chcp 65001\n vrunner syntax-check'                
              }       
         }
+
+        stage('Smoke tests') {
+            steps{
+                script {
+                    try {
+                        bat "chcp 65001\n runner xunit"
+                    }
+                    catch(Exception Exc) {
+                        currentBuild.result = 'UNSTABLE'
+                    }
+                }   
+            }    
+        }
     }
     
 
@@ -47,7 +60,9 @@ pipeline {
             bat 'echo failure'
         }
         always {
-            bat 'echo failure'
+            allure includeProperties: false, jdk: '', resultPolicy: 'LEAVE_AS_IS', results: [[path: 'out/syntax-check/allure'], [path: 'out/smoke/allure']]
+            junit 'out/syntax-check/junit/junit.xml'   
+            junit 'out/smoke/junit/*.xml'
         }
     }
 
