@@ -1,5 +1,5 @@
 {
-  "reportPath": "$workspaceRoot/build/out/allure",
+  "reportPath": "C:\\jenkins\\workspace\\pipeline1C\\out\\yaxunit\\allure",
   "closeAfterTests": true,
   "filter": {
     "extensions": [
