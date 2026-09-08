@@ -31,7 +31,7 @@ pipeline {
 
         stage('Сборка расширения') {
             steps {
-                bat 'chcp 65001\n vrunner compileext ./src/cfe Yaxunit --unsafe-action-protection' 
+                bat 'chcp 65001\n vrunner compileext ./src/cfe Yaxunit' 
             }
         }
 
