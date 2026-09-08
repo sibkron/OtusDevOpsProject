@@ -7,8 +7,8 @@ pipeline {
         envString = 'true'
         STORAGE_PATH = 'C:\\Base1c\\Storage'
         GIT_REPO_PATH = 'C:\\OtusRepo\\OtusProject\\src\\cf'
-        STORAGE_PATH_CFE = 'C:\\Base1c\\StorageYaxunit'
-        GIT_REPO_PATH_CFE = 'C:\\OtusRepo\\OtusProject\\src\\cfe'
+        STORAGE_CFE = 'C:\\Base1c\\StorageYaxunit'
+        GIT_REPO_CFE = 'C:\\OtusRepo\\OtusProject\\src\\cfe'
         USER_1C = 'admin'
         EPF_STORAGE_PATH = 'C:\\OtusRepo\\OtusProject\\build\\epf'
         GIT_EPF_STORAGE_PATH = 'C:\\OtusRepo\\OtusProject\\src\\epf'
@@ -20,7 +20,7 @@ pipeline {
         stage('Синхронизация репозитория') {
             steps {
                 bat 'chcp 65001\n gitsync sync --storage-user "%USER_1C%" "%STORAGE_PATH%" "%GIT_REPO_PATH%"'
-                bat 'chcp 65001\n gitsync sync -e "Yaxunit" --storage-user "%USER_1C%" "%STORAGE_PATH_CFE%" "%GIT_REPO_PATH_CFE%"' 
+                bat 'chcp 65001\n gitsync sync -e "Yaxunit" --storage-user "%USER_1C%" "%STORAGE_CFE%" "%GIT_REPO_CFE%"' 
             }
         }
 
