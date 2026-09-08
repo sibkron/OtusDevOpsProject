@@ -29,6 +29,11 @@ pipeline {
             }
         }
 
+        stage('Сборка расширения') {
+            steps {
+                bat 'chcp 65001\n vrunner compileext' 
+            }
+        }
 
         stage('Синтаксический контроль') {
             steps {

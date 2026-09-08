@@ -15,6 +15,10 @@
         "--vanessasettings": "./tools/VAParams.json",
         "--pathvanessa": "./oscript_modules/vanessa-automation-single/vanessa-automation-single.epf",
         "--additional": "/DisplayAllFunctions /L ru"
-    }
+    },
+    "compileext": {
+    "inputPath": "./src/cfe",
+    "extensionName": "Yaxunit"
+  }
 }
 
