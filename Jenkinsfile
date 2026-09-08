@@ -19,7 +19,6 @@ pipeline {
     stages {
         stage('Синхронизация репозитория') {
             steps {
-                bat 'chcp 65001\n gitsync sync -u admin C:\\Base1c\\Storage C:\\OtusRepo\\OtusProject\\src\\cf'
                 bat 'chcp 65001\n gitsync sync -e "Yaxunit" --storage-user "%USER_1C%" "%STORAGE_CFE%" "%GIT_REPO_CFE%"' 
             }
         }
