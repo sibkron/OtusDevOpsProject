@@ -23,6 +23,12 @@ pipeline {
             }
         }
 
+        stage('Checkout') {
+            steps {
+                checkout scm 
+            }
+        }
+
         stage('Сборка тестовой базы') {
             steps {
                 bat 'chcp 65001\n vrunner init-dev' 
