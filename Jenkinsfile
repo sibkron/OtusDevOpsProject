@@ -31,7 +31,7 @@ pipeline {
 
         stage('Сборка расширения') {
             steps {
-                bat 'chcp 65001\n vrunner compileext' 
+                bat 'chcp 65001\n vrunner compileext ./src/cfe --extensionName Yaxunit' 
             }
         }
 
