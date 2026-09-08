@@ -35,6 +35,12 @@ pipeline {
             }
         }
 
+        stage('Обновление расширения') {
+            steps {
+                bat 'chcp 65001\n vrunner updateext Yaxunit' 
+            }
+        }
+
         stage('Синтаксический контроль') {
             steps {
                 bat 'chcp 65001\n vrunner syntax-check'                
