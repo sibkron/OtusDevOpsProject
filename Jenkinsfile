@@ -23,9 +23,16 @@ pipeline {
             }
         }
 
-        stage('Checkout') {
+        stage('Получение кода из Git') {
             steps {
-                checkout scm 
+                // Удаление всех файлов из рабочего каталога на сервере 
+		        bat 'del /F /S /Q *.*'
+		        // Удаление всех папок из рабочего каталога на сервере 
+		        bat 'for /d %%x in (.\\*) do @rd /s /q %%x'
+		        // Вывод echo в консоль Jenkins 
+		        echo 'step Git Checkout'
+		        // Извлечение из системы контроля версий в рабочий каталог на сервере  
+		        checkout scm 
             }
         }
 
