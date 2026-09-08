@@ -47,6 +47,12 @@ pipeline {
              }       
         }
 
+        stage('Подготовка Yaxunit') {
+            steps {
+                bat 'chcp 65001\n "C:\\Program Files\\1cv8\\8.3.27.1508\\bin\\1cv8c.exe" ENTERPRISE /IBConnectionString "File=""C:\\jenkins\\workspace\\pipeline1C\\build\\ib"";" /C "UnsafeMode"'                 
+             }       
+        }
+
         stage('Yaxunit тесты') {
             steps {
                 bat 'chcp 65001\n "C:\\Program Files\\1cv8\\8.3.27.1508\\bin\\1cv8c.exe" ENTERPRISE /IBConnectionString "File=""C:\\Base1c\\DemoUnitTest"";" /C "RunUnitTests=C:\\OtusRepo\\OtusProject\\tools\\Yaxunit.json" /N"Администратор"\n'                
